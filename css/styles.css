@@ -356,26 +356,38 @@ h1,h2,h3,h4,h5,h6,p{
     gap: 24px;
 }
 
-/* .icon-item{
-    display: block;
+ .icon-item{
+    /* наследуется от icon-list */
     width: 40px;
     height: 40px;
     background-color:#4D5AE5;
-    padding: 12px;
     border-radius:50%;
-} */
+} 
 
-.icon-link{
+/* .icon-link{
     display: inline-block;
     width: 40px;
     height: 40px;
     background-color: #4D5AE5;
     padding: 12px;
     border-radius: 50%;
+} */
+
+.icon-link{
+    display: flex;
+    /* наследуется от родителького эл-та .icon-item*/
+    width: 100%;
+    height: 100%;
+    /* border-radius: 50%; */
+    justify-content: center;
+    align-items: center;
+    /* fill: #fff; */
 }
 
 .icon{
     fill: #fff;
+    /* stroke: #fff; */
+    /* background: #31d0aa; */
 }
 
 .portfolio-header { 
@@ -404,6 +416,40 @@ flex-direction: column;
 /* gap: 8px; */
 width: calc((100% - 48px)/3);
 /* margin-bottom: 48px; */
+/* transition-property: ; */
+}
+
+.portfolio-thumb{
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-item:hover .overlay {
+    transform: translateY(0);
+
+}
+
+.overlay{
+    position: absolute;
+    top:0px;
+    left:0px;
+
+    transform:translateY(100%);
+    transition: transform 300ms ease-in;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+
+    width: 100%;
+    height: 100%;
+    /* font-weight: 400; */
+    /* font-size: 16px; */
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    padding: 40px 32px;
+
+    background: #4d5ae5;
 }
 
 .card-content{
@@ -475,4 +521,50 @@ width: calc((100% - 48px)/3);
     letter-spacing: 0.02em;
     color: #f4f4fd;
 }
+
+.footer-wraper{
+    /* display: flex; */
+}
+
+.footer-social{
+    display: flex;
+    flex-direction: column;
+    max-width: 208px;
+}
+
+.footer-social-list{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 16px;
+
+}
+
+.footer-social-text{
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+    padding-bottom: 16px;
+}
+
+.footer-social-item{
+    width: 40px;
+    height: 40px;
+    background-color: #4D5AE5;
+    border-radius: 50%;
+}
+
+.footer-social-link{
+    display: flex;
+    /* наследуется от родителькогоэл-та .icon-item*/
+    width: 100%;
+    height: 100%;
+    /* border-radius: 50%; */
+    justify-content: center;
+    align-items: center;
+    /* fill: #fff; */
+}
+
 /* #endregion */
