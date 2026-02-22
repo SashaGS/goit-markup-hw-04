@@ -347,36 +347,36 @@ h1,h2,h3,h4,h5,h6,p{
     color: #434455;
     text-align: center;
 }
-.team-icon{
-    /* background-color: #4D5AE5; */
+
+.icon-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 24px;
 }
 
-.team-icon-instagram{
-    /* stroke:#4D5AE5; */
-    fill:#4D5AE5; 
-    stroke:#fff; 
-    border-radius: 50%;
-   
-}
-
-.team-icon-twitter {
-    border-radius: 50%;
-}
-
-.team-icon-facebook {
-    border-radius: 50%;
-}
-
-.team-icon-linkedin {
-    border-radius: 50%;
-}
-
-/* #endregion */
-
-/* #region portfolio*/
-/* .portfolio {
-    padding: 120px 0;
+/* .icon-item{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color:#4D5AE5;
+    padding: 12px;
+    border-radius:50%;
 } */
+
+.icon-link{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #4D5AE5;
+    padding: 12px;
+    border-radius: 50%;
+}
+
+.icon{
+    fill: #fff;
+}
 
 .portfolio-header { 
     font-size: 36px;
