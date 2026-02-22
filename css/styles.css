@@ -185,6 +185,8 @@ h1,h2,h3,h4,h5,h6,p{
     background-repeat:no-repeat;
     background-position:center;
     background-size: 1440px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-content{
@@ -247,6 +249,14 @@ h1,h2,h3,h4,h5,h6,p{
 .benefit-item {
     max-width: 264px;
 }
+
+.benefit-wraper{
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    padding: 24px 100px;
+    background: #f4f4fd;
+}
+
 .benefit-title {
     font-weight: 500;
     font-size: 20px;
@@ -256,7 +266,7 @@ h1,h2,h3,h4,h5,h6,p{
     margin-bottom: 8px;
 }
 .benefit-paragraf {
-    max-width: 264px;
+    /* max-width: 264px; */
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
@@ -293,7 +303,6 @@ h1,h2,h3,h4,h5,h6,p{
     justify-content: center;
     flex-direction: column;
     /* gap: 32px; */
-
     /* box model */
     border-radius: 0 0 4px 4px;
     /* padding-block: 0px 32px; */
@@ -337,6 +346,29 @@ h1,h2,h3,h4,h5,h6,p{
     letter-spacing: 0.02em;
     color: #434455;
     text-align: center;
+}
+.team-icon{
+    /* background-color: #4D5AE5; */
+}
+
+.team-icon-instagram{
+    /* stroke:#4D5AE5; */
+    fill:#4D5AE5; 
+    stroke:#fff; 
+    border-radius: 50%;
+   
+}
+
+.team-icon-twitter {
+    border-radius: 50%;
+}
+
+.team-icon-facebook {
+    border-radius: 50%;
+}
+
+.team-icon-linkedin {
+    border-radius: 50%;
 }
 
 /* #endregion */
