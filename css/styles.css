@@ -227,6 +227,8 @@ h1,h2,h3,h4,h5,h6,p{
     line-height: 1.5;
     letter-spacing: 0.04em;
     color:#fff;
+
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
    
 }
 
@@ -388,6 +390,7 @@ h1,h2,h3,h4,h5,h6,p{
     fill: #fff;
     /* stroke: #fff; */
     /* background: #31d0aa; */
+    /* fill="#F4F4FD */
 }
 
 .portfolio-header { 
@@ -435,7 +438,7 @@ width: calc((100% - 48px)/3);
     left:0px;
 
     transform:translateY(100%);
-    transition: transform 300ms ease-in;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     /* display: flex;
     justify-content: center;
     align-items: center; */
@@ -557,6 +560,13 @@ width: calc((100% - 48px)/3);
     height: 40px;
     background-color: #4D5AE5;
     border-radius: 50%;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social-item:hover,
+.footer-social-item:focus{
+    background-color:#31d0aa ;
 }
 
 .footer-social-link{
