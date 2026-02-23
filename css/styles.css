@@ -9,7 +9,8 @@ button{
     cursor: pointer;
     padding: 0;
     border: 1px solid transparent;
-    background-color: none;
+    /* background-color: none; */
+    background-color:transparent; 
 }
 
 img{
@@ -262,6 +263,7 @@ h1,h2,h3,h4,h5,h6,p{
     border-radius: 4px;
     padding: 24px 100px;
     background: #f4f4fd;
+    margin-bottom: 8px;
 }
 
 .benefit-title {
@@ -548,6 +550,7 @@ h1,h2,h3,h4,h5,h6,p{
 
 .container.footer-wraper{
     display: flex;
+    align-items:baseline;
 }
 
 .footer-social{
