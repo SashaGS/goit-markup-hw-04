@@ -229,13 +229,13 @@ h1,h2,h3,h4,h5,h6,p{
     letter-spacing: 0.04em;
     color:#fff;
 
-    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
    
 }
 
 .hero-btn:hover,
 .hero-btn:focus{
-    background: #404bbf;
+    background-color: #404bbf;
 }
 /* #endregion */
 
@@ -254,6 +254,10 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 .benefit-wraper{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
     border: 1px solid #8e8f99;
     border-radius: 4px;
     padding: 24px 100px;
@@ -365,7 +369,14 @@ h1,h2,h3,h4,h5,h6,p{
     height: 40px;
     background-color:#4D5AE5;
     border-radius:50%;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 } 
+
+.icon-item:hover,
+.icon-item:focus{
+    background-color:#31d0aa;
+}
 
 /* .icon-link{
     display: inline-block;
@@ -419,6 +430,8 @@ justify-content: center;
 flex-direction: column;
 /* gap: 8px; */
 width: calc((100% - 48px)/3);
+
+transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 /* margin-bottom: 48px; */
 /* transition-property: ; */
 }
@@ -430,7 +443,12 @@ width: calc((100% - 48px)/3);
 
 .portfolio-item:hover .overlay {
     transform: translateY(0);
+     
+}
 
+.portfolio-item:hover{
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+ 
 }
 
 .overlay{
