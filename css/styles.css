@@ -184,7 +184,7 @@ h1,h2,h3,h4,h5,h6,p{
         url(../images/people-office.jpg);
     background-repeat:no-repeat;
     background-position:center;
-    /* background-size: 1440px; */
+    max-width: 1440px; 
     background-size: cover;
     margin-left: auto;
     margin-right: auto;
@@ -367,16 +367,12 @@ h1,h2,h3,h4,h5,h6,p{
     /* наследуется от icon-list */
     width: 40px;
     height: 40px;
-    background-color:#4D5AE5;
-    border-radius:50%;
-
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 } 
 
-.icon-item:hover,
+/* .icon-item:hover,
 .icon-item:focus{
     background-color:#31d0aa;
-}
+} */
 
 /* .icon-link{
     display: inline-block;
@@ -392,16 +388,19 @@ h1,h2,h3,h4,h5,h6,p{
     /* наследуется от родителького эл-та .icon-item*/
     width: 100%;
     height: 100%;
-    /* border-radius: 50%; */
     justify-content: center;
     align-items: center;
-    /* fill: #fff; */
+    background-color:#4D5AE5;
+    border-radius:50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-link:hover, 
+.icon-link:focus{
+    background-color:#404bbf;
 }
 
 .icon{
-    /* fill: #fff; */
-    /* stroke: #fff; */
-    /* background: #31d0aa; */
     fill:#F4F4FD;
 }
 
@@ -424,16 +423,16 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 .portfolio-item {
-display: flex;
-align-items: flex-start;
-justify-content: center;
-flex-direction: column;
-/* gap: 8px; */
-width: calc((100% - 48px)/3);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    /* gap: 8px; */
+    width: calc((100% - 48px)/3);
 
-transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-/* margin-bottom: 48px; */
-/* transition-property: ; */
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    /* margin-bottom: 48px; */
+    /* transition-property: ; */
 }
 
 .portfolio-thumb{
@@ -577,26 +576,34 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .footer-social-item{
     width: 40px;
     height: 40px;
-    background-color: #4D5AE5;
-    border-radius: 50%;
+    /* background-color: #4D5AE5;
+    border-radius: 50%; */
 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
-.footer-social-item:hover,
+/* .footer-social-item:hover,
 .footer-social-item:focus{
     background-color:#31d0aa ;
-}
+} */
 
 .footer-social-link{
     display: flex;
     /* наследуется от родителькогоэл-та .icon-item*/
     width: 100%;
     height: 100%;
-    /* border-radius: 50%; */
+   
     justify-content: center;
     align-items: center;
-    /* fill: #fff; */
+
+    background-color: #4D5AE5;
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus{
+    background-color:#31d0aa ;
 }
 
 /* #endregion */
